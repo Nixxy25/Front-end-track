@@ -1,0 +1,56 @@
+/* *{
+    margin: 0;
+} */
+body{
+    background-color: #00246b;
+    margin: 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Inter;
+
+}
+.track{
+    width: 500px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #cadcfc;
+    background-color: #8ab6f9;
+    border-radius: 10px;
+    padding: 30px;
+}
+.user-name{
+    font-size: 36px;
+    font-weight: bold;
+}
+.user-image{
+    width: 200px;
+    border-radius: 100px;
+    border: 2px solid #cadcfc;
+}
+.week,
+.time,
+.track{
+    font-size: 27px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.github-btn{
+    border: none;
+    padding: 10px 15px ;
+    font-size: 16px;
+    background-color: #00246b;
+    border-radius: 10px;
+    color: #cadcfc;
+    font-family: Inter;
+    font-weight: 500;
+}
+.github-btn:hover{
+    background-color: #cadcfc;
+    color: #00246b;
+}
