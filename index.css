@@ -1,44 +1,47 @@
-/* *{
+*{
     margin: 0;
-} */
+}
 body{
     background-color: #00246b;
-    margin: 50px;
-    box-sizing: border-box;
+  
+}
+.body{
     display: flex;
-    flex-direction: column;
+    width: 100%;
+    height: 100vh;
     justify-content: center;
     align-items: center;
     font-family: Inter;
-
 }
 .track{
-    width: 500px;
-    height: 550px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     color: #cadcfc;
     background-color: #8ab6f9;
     border-radius: 10px;
-    padding: 30px;
+    padding: 30px 50px;
 }
 .user-name{
     font-size: 36px;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 .user-image{
     width: 200px;
     border-radius: 100px;
     border: 2px solid #cadcfc;
+    margin-bottom: 20px;
 }
 .week,
 .time,
 .track{
     font-size: 27px;
     font-weight: 500;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
+}
+.btn-tag{
+    margin-top: 10px;
 }
 .github-btn{
     border: none;
@@ -49,8 +52,28 @@ body{
     color: #cadcfc;
     font-family: Inter;
     font-weight: 500;
+    outline: none;
+    
 }
 .github-btn:hover{
     background-color: #cadcfc;
     color: #00246b;
+}
+
+
+@media only screen and (max-width: 500px) {
+    .user-name{
+        font-size: 26px;
+    }
+    .week,
+    .time,
+    .track{
+    font-size: 16.5px
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .track{
+        padding: 15px;
+    }
 }
