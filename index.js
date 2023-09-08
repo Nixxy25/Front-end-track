@@ -1,8 +1,7 @@
 function UtcTime(){
         const myDate = new Date();
         const utcMilliseconds = myDate.getTime();
-        const timeNow = utcMilliseconds.toString();
-        document.getElementById("currentUTCTime").innerHTML= timeNow;
+        document.getElementById("currentUTCTime").innerHTML= utcMilliseconds;
         
         const daysOfWeek =["Sunday", "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
         const day = daysOfWeek[myDate.getDay()];
