@@ -3,15 +3,13 @@
 }
 body{
     background-color: #00246b;
-  
-}
-.body{
     display: flex;
     width: 100%;
     height: 100vh;
     justify-content: center;
     align-items: center;
     font-family: Inter;
+  
 }
 .track{
     display: flex;
@@ -42,24 +40,13 @@ body{
 }
 .btn-tag{
     margin-top: 10px;
-}
-.github-btn{
-    border: none;
-    padding: 10px 15px ;
-    font-size: 16px;
-    background-color: #00246b;
-    border-radius: 10px;
-    color: #cadcfc;
-    font-family: Inter;
-    font-weight: 500;
-    outline: none;
-    
-}
-.github-btn:hover{
-    background-color: #cadcfc;
     color: #00246b;
+    font-family: Inter;
+    font-size: 25px;
 }
-
+.btn-tag:hover{
+    color: #cadcfc;
+}
 
 @media only screen and (max-width: 500px) {
     .user-name{
