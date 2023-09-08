@@ -1,7 +1,8 @@
 const time = new Date();
 const hours = time.getUTCHours();
 const minutes = time.getUTCMinutes();
-document.getElementById("currentUTCTime").innerHTML = (`Current UTC Time: ${hours}:${minutes}`)
+const milliseconds =time.getUTCMilliseconds();
+document.getElementById("currentUTCTime").innerHTML = (`Current UTC Time: ${hours}:${minutes}:${milliseconds}`)
 
 
 const currentDate = new Date();
