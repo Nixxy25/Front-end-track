@@ -1,7 +1,7 @@
 const myDate = new Date();
 const utcMilliseconds = myDate.getUTCMilliseconds();
-document.getElementById("currentUTCTime").innerHTML=(`Current UTC Time :${utcMilliseconds}`)
+document.getElementById("currentUTCTime").innerHTML=(utcMilliseconds)
 
 const daysOfWeek =["Sunday", "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-const days = daysOfWeek[myDate.getDay()];
-document.getElementById("currentDayOfTheWeek").innerHTML = (`Current Day of the Week: ${days}`)
+const day = daysOfWeek[myDate.getDay()];
+document.getElementById("currentDayOfTheWeek").innerHTML = (day)
