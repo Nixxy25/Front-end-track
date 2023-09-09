@@ -14,10 +14,10 @@ function utcMilliseconds(){
     const day = daysOfWeek[myDate.getUTCDay()];
     document.querySelector('[data-testid="currentDayOfTheWeek"]').textContent = day;
 
-    const utcTime = myDate.toUTCString().split(" ")[4];
-    document.querySelector('[data-testid="currentUTCTime"]').textContent= utcTime;
+    const utcTime = myDate.getTime();
+    document.querySelector('[data-testid="currentUTCTime"]').textContent= utcTime.toString();
 }
 
 utcMilliseconds();
 
-setInterval(utcMilliseconds, 1000)
+setInterval(utcMilliseconds, 1)
