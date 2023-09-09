@@ -1,23 +1,26 @@
-function utcMilliseconds(){
-    const myDate = new Date();
+document.addEventListener("DOMContentLoaded", function() {
+    const currentUTCTimeA1 = document.getElementById('currentUTCTime');
+    const currentDayOfTheWeekA1 = document.getElementById('currentDayOfTheWeek');
+    
+    function updateCurrent() {
+        const date = new Date();
+        const time = date.getTime();
 
-    const daysOfWeek = [
-        "Sunday",
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-    ]
+        const daysOfWeek = [
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+        ];
+        const currentDay = daysOfWeek[date.getUTCDay()];
 
-    const day = daysOfWeek[myDate.getUTCDay()];
-    document.querySelector('[data-testid="currentDayOfTheWeek"]').textContent = day;
+        currentUTCTimeA1.textContent = time;
+        currentDayOfTheWeekA1.textContent = currentDay;    
+    }
 
-    const utcTime = myDate.getTime();
-    document.querySelector('[data-testid="currentUTCTime"]').textContent= utcTime.toString();
-}
-
-utcMilliseconds();
-
-setInterval(utcMilliseconds, 1)
+    setInterval(updateCurrent, 1000);
+    updateCurrent();
+});
