@@ -11,7 +11,7 @@ function utcMilliseconds(){
         "Saturday",
     ]
 
-    const day = daysOfWeek[myDate.getUTCDay];
+    const day = daysOfWeek[myDate.getUTCDay()];
     document.querySelector('[data-testid="currentDayOfTheWeek"]').textContent = day;
 
     const utcTime = myDate.toUTCString().split(" ")[4];

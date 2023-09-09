@@ -16,7 +16,6 @@ body{
 [data-testid="slackUserName"]{
     font-size: 25px;
     margin-bottom: 10px;
-   
 }
 [data-testid="slackDisplayImage"]{
     max-width: 200px;
@@ -24,6 +23,12 @@ body{
     border-radius: 100px;
 }
 [data-testid="currentDayOfTheWeek"]{
+    margin-bottom: 10px;
+}
+[data-testid="currentUTCTime"]{
+    margin-bottom: 10px;
+}
+[data-testid="myTrack"]{
     margin-bottom: 10px;
 }
 [data-testid="githubURL"]{
